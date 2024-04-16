@@ -39,13 +39,9 @@ function App() {
     <Navbar title="TextTunes" mode={mode} toggleMode={toggleMode} key={new Date()} />
     <Alert alert={alert}/>
     <div className="container my-3">
-    
-          
-          
-            <TextForm showAlert={showAlert} heading="Try TextTunes - word counter, character counter, remove extra spaces" mode={mode}/>
-       
-    
+     <TextForm showAlert={showAlert} heading="Try TextTunes - word counter, character counter, remove extra spaces" mode={mode}/>
     </div>
+
     </> 
   );
 }

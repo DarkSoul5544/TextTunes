@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+
+
 export default function Navbar(props) {
     return (
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
@@ -15,8 +17,9 @@ export default function Navbar(props) {
                             <a className="nav-link" aria-current="page" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/about">{props.aboutText}</a>
+                            <a className="nav-link" href="/" >{props.aboutText}</a> 
                         </li>
+                        
                     </ul>
                     <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
                         <button type="button" className={`btn btn-${props.mode} bg-${props.mode}`} onClick={props.toggleMode}>Toggle Mode</button>
